@@ -46,4 +46,5 @@ app.use(function (err, req, res, next) {
     res.status(err.status || 500).send(err);
 });
 
+console.log("Running Service at PORT: " + process.env.PORT);
 module.exports = app;
